@@ -1,38 +1,61 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add these styles for the carousel */
+.ant-carousel {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-carousel .slick-slide {
+  text-align: center;
+  overflow: hidden;
+  height: 500px;  /* Match the image height */
 }
 
-.App-link {
-  color: #61dafb;
+.ant-carousel .slick-slide img {
+  margin: 0 auto;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: Style the dots */
+.ant-carousel .slick-dots li button {
+  background: #364d79;
+  opacity: 0.4;
 }
+
+.ant-carousel .slick-dots li.slick-active button {
+  opacity: 1;
+  background: #364d79;
+}
+
+.App-content {
+  padding: 20px;
+  min-height: calc(100vh - 72px - 400px); /* Adjusted for navbar and hero height */
+}
+
+/* Add these styles for the products section */
+.products-section {
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Update App-content if needed */
+.App-content {
+  min-height: auto;
+  padding: 0;
+}
+
+/* You can remove all other styles if you're not using them anymore */
